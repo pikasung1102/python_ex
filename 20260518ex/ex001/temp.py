@@ -44,15 +44,27 @@ printIntro()        # --> 함수 호출부
 # 기능을 최대한 작게 그리고 다른 프로그램에 이식하기 쉽게 만들자.
 # 계산기 프로그램을 함수를 이용해서 만들어 보자!
 
+def add():
+    print(f'덧셈결과: {num1 + num2}')
+
+def sub():
+    print(f'뺼셈결과: {num1 - num2}')
+
+def mul():
+    print(f'곱셈결과: {num1 * num2}')
+
+def div():
+    print(f'나눗셈결과: {num1 / num2}')
+
 def calculator():
     if openator == 1:
-        print(f'덧셈결과: {num1 + num2}')
+        add()
     elif openator == 2:
-        print(f'뺼셈결과: {num1 - num2}')
+        sub()
     elif openator == 3:
-        print(f'곱셈결과: {num1 * num2}')
+        mul()
     elif openator == 4:
-        print(f'나눗셈결과: {num1 / num2}')
+        div()
 
 
 
@@ -61,3 +73,14 @@ openator = int(input('연산자 입력: 1.덧셈      2.뺄셈      3.곱셈    
 num2 = float(input('두 번째 숫자 입력:'))
 
 calculator()
+
+# 유치원에 납품되는 계산기를 만들어 주세요. (덧셈, 뺄셈)
+
+def lowCalculator():
+    if openator == 1:
+        add()
+    elif openator == 2:
+        sub()
+
+# 
+    

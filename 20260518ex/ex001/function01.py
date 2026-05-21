@@ -130,18 +130,29 @@ stopTempratureSensor()
 을 함수를 이용해서 만들어봅시다.
 '''
 
+def add():
+    print(f'덧셈 결과: {inputNumber1 + inputNumber2}')
+def sud():
+    print(f'뺄셈 결과: {inputNumber1 - inputNumber2}')
+def mul():
+    print(f'곱셈 결과: {inputNumber1 * inputNumber2}')
+def div():
+    print(f'나눗셈 결과: {inputNumber1 / inputNumber2}')
+
 def calculator():
     if selectedOperator == 1:
-        print(f'덧셈 결과: {inputNumber1 + inputNumber2}')
+        add()
     elif selectedOperator == 2:
-        print(f'뺄셈 결과: {inputNumber1 - inputNumber2}')
+        sud()
     elif selectedOperator == 3:
-        print(f'곱셈 결과: {inputNumber1 * inputNumber2}')
+        mul()
     elif selectedOperator == 4:
-        print(f'나눗셈 결과: {inputNumber1 / inputNumber2}')
+        div()
+        
 
 inputNumber1 = float(input('숫자를 입력하세요.'))
 selectedOperator = int(input('연산자를 선택하세요. 1.덧셈      2.뺄셈      3.곱셈      4.나눗셈'))
 inputNumber2 = float(input('숫자를 입력하세요.'))
 
 calculator()
+
